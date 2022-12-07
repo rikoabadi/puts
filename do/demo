@@ -1,0 +1,3 @@
+#!/home/runcloud/webapps/puts/backend/do/do
+put random (1000) & cr
+put shell("/home/runcloud/webapps/puts/backend/sql/sql -ui")
