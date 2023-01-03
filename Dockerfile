@@ -6,4 +6,5 @@ COPY ./puts-exec/ /home/puts-exec/
 #COPY ./backend /home/backend/
 #RUN chmod +x /home/do/do
 RUN chmod +x /home/puts-exec/puts-exec
-ENTRYPOINT ["/home/puts-exec/puts-exec", "-ui", "--port=8080","--versi=9.a, --jobs=5"]
+RUN chmod +x /home/puts-exec/exec
+ENTRYPOINT ["/home/puts-exec/exec", "-ui", "--port=8080","--jobs=1"]
